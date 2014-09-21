@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prediction using MTCars Data</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Prediction using MTCars Data">
+  <meta name="author" content="Sumukh">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Prediction using MTCars Data</h1>
+    <h2></h2>
+    <p>Sumukh<br/>Creator of awesome apps :P</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Need for the App</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>MTCars is one of the most popular datasets out there</li>
+<li>Used to teach linear regression to staudents of statistics</li>
+<li>It is quite simple: it has just 32 observations</li>
+<li>But it has 11 variables !!</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Features</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>You can create scatterplot between any two variables</li>
+<li>I have selected 4 continous variables</li>
+<li>It shows a regression line as well</li>
+<li>You can give a value of x-variable for which you want to predict y-value</li>
+<li>It will use this for predicting the Y-variable value based on the regression line</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Instructions</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Select the radio buttons to select the X and Y variables</li>
+<li>Optionally enter the X-variable&#39;s value in the text box if you want to</li>
+<li>Press submit</li>
+<li>Blink your eyes</li>
+<li>The answers are on the screen !!</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>How to predict Y-values</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>use lm(mtcars$y~mtcars$x)</li>
+<li>This will give you a regression object</li>
+<li>The object has a coefficients attribute</li>
+<li>This will give you alpha and beta values</li>
+</ol>
+
+<p>(Calculations done by Slidify)</p>
+
+<pre><code class="r"># What you entered
+x &lt;- 9.4
+
+# Alpha and Beta values in regression equation
+y&lt;-1.3+4.8*x
+
+#Predicted value of Y
+y
+</code></pre>
+
+<pre><code>## [1] 46.42
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Benefits of using the App</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Good for cross-checking calculations</li>
+<li>Understand relations between the variables
+For example, Mileage(miles/gallon of fuel) decreases with increase in weight
+which implies negative correlation</li>
+<li>You can cross-check your calculations using the prediction scores</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Need for the App'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Features'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Instructions'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='How to predict Y-values'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Benefits of using the App'>
+         5
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+   
+  </html>
